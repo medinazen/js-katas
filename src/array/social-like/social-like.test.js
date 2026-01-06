@@ -1,4 +1,4 @@
-const getLikes = require("./social-like");
+const getLikes = require("./social-like.js");
 
 test("getLikes function exists", () => {
   expect(typeof getLikes).toBe("function");

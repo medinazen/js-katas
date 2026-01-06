@@ -8,9 +8,21 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 */
 
 // TODO add your code here
-
+function sum(number) {
+    let total = 1;
+    let result = 0;
+    while ( total < number ) {
+        if ( total % 3 === 0 || total % 5 === 0 ) {
+            result += total;
+            console.log(total);
+        }
+        total++;
+    }
+    return result;
+}
 // Begin of tests
 const assert = require("assert");
+
 
 assert.strictEqual(typeof sum, "function");
 assert.strictEqual(sum.length, 1);
