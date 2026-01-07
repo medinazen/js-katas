@@ -13,7 +13,12 @@ Example:
 Don't mutate the parameter.
 
 */
-
+function inverse(array) {
+    if (!array || array.length === 0) {
+        return [];
+    }
+    return array.map(num => -num);
+}
 // TODO add your code here
 
 module.exports = inverse;
