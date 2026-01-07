@@ -16,12 +16,18 @@ Example:
 Add you own tests.
 
 */
-function palindrome(str) {
-  let i;
-  let y;
-  while (str[i]/2)
-{
-if
+function isPalindrome(word) {
+  if (word === null || word === '') {
+    return true;
+  }
+  const normalizedWord = word.toLowerCase();
+  const reversedWord = normalizedWord.split('').reverse().join('');
+  return normalizedWord === reversedWord;
+
+if (normalizedWord === reversedWord) {
+  return true;
+} else {
+  return false;
 }
 }
 // TODO add your code here
