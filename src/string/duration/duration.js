@@ -12,5 +12,16 @@ Add you own tests.
 */
 
 // TODO add your code here
+function convertTime(timeStr) {
+  const timePattern = /^(\d{2}):(\d{2})$/;
+  const match = timeStr.match(timePattern);
+    if (!match) {
+        return null;
+    }
+
+    const hours = parseInt(match[1], 10);
+    const minutes = parseInt(match[2], 10);
+    return hours * 60 + minutes;
+}
 
 module.exports = convertTime;

@@ -16,7 +16,14 @@ Example:
 Add you own tests.
 
 */
-
+function palindrome(str) {
+  let i;
+  let y;
+  while (str[i]/2)
+{
+if
+}
+}
 // TODO add your code here
 
 module.exports = isPalindrome;
